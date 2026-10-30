@@ -1,0 +1,5 @@
+flask>=3.0
+youtube-transcript-api>=1.0
+# Optional: AI fallback for videos with no captions
+yt-dlp
+faster-whisper
