@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: video-to-text
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-hosted.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --timeout 120
